@@ -224,21 +224,24 @@
             runAsync().start();
         })();
          </div>
-</script>
- <audio id="song" autoplay>
-    <source src="music/nhac.mp3" type="audio/mp3" />
+<audio id="song" autoplay>
+    <source src="image/nhac.mp3" type="audio/mp3">
 </audio>
 <script>
     var audio = document.getElementById("song");
     audio.addEventListener("canplay", function() {
         audio.playbackRate = 1.25; // Chỉnh tốc độ lên 1.5 khi đã sẵn sàng phát
         audio.play(); // Phát lại nhạc sau khi đã thiết lập tốc độ
+    });
+</script>
+<script src="intro.js"></script>
+</body>
+</html>
     </script>
     <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
         <p>Contact: <a href="https://www.facebook.com/ruouvang1212/" target="_blank"> Bé Thư cute</a></p>
    <div id="audioContainer"></div> 
     </script>
-<script src="intro.js"></script>
 </script>
 </body>
 </html>
