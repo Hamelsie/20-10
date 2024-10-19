@@ -223,14 +223,27 @@
 
             runAsync().start();
         })();
+         </div>
+ </div>
+</script>
+<audio id="song" autoplay>
+    <source src="music/nhac.mp3" type="audio/mp3" />
+</audio>
+<script>
+    var audio = document.getElementById("song");
+    audio.addEventListener("canplay", function() {
+        audio.playbackRate = 1.25; // Chỉnh tốc độ lên 1.5 khi đã sẵn sàng phát
+        audio.play(); // Phát lại nhạc sau khi đã thiết lập tốc độ
     </script>
     <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
         <p>Contact: <a href="https://www.facebook.com/ruouvang1212/" target="_blank"> Bé Thư cute</a></p>
    <div id="audioContainer"></div> 
-    </div>
-     <audio loop>
-        <source src="music/nhac.mp3" type="audio/mp3" />
-    </audio>
+ // ------audio------------
+var buttonSong = document.querySelector('.button')
+var mySong = document.getElementById("song")
+buttonSong.onclick= function(){
+    if(mySong.paused){
+        mySong.play()
     <script>
         var audioContainer = document.getElementById('audioContainer');
         var audioElement = document.querySelector('audio');
